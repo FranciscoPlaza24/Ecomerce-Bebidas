@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Bebidas</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <video autoplay loop muted id="header-video">
+          <source src="./imagenes/footer.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+        <button id="cart-button">
+          <span class="material-symbols-outlined">
+              local_mall
+          </span> (<span id="cart-count">0</span>)
+      </button>
+      <div id="cart-popup" class="cart-popup">
+          <!-- Contenido del carrito -->
+          <div id="cart-items"></div>
+          <div>Total: <span id="cart-total">$0.00</span></div>
+          <button id="checkout-button">Comprar</button>
+      </div>
+      </div>
+    </header>
+  
+    <main>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Buscar productos..."
+        />
+        <button id="search-button">Buscar</button>
+      </div>
+      <div class="search-message" id="search-message"></div>
+      <section class="product-category" id="cervezas">
+        <h2></h2>
+        <div class="product">
+          <img src="./imagenes/cervezas/cerveza 1-Photoroom.png" alt="Cerveza" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/cervezas/cerveza2-Photoroom.png" alt="Cerveza 2" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/cervezas/cerveza 3-Photoroom.png " alt="Cerveza 3" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+      </section>
+  
+      <section class="product-category" id="vinos">
+        <h2></h2>
+        <div class="product">
+          <img src="./imagenes/vinos/vino 1-Photoroom.png" alt="Vino" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/vinos/vino 2-Photoroom.png" alt="Vino 2" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/vinos/vino3-Photoroom.png" alt="Vino 3" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+      </section>
+  
+      <section class="product-category" id="licores">
+        <h2></h2>
+        <div class="product">
+          <img src="./imagenes/licor/licor 1-Photoroom.png" alt="Licor" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/licor/licor 2-Photoroom.png" alt="Licor 2" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/licor/licor3-Photoroom.png" alt="Licor 3" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+      </section>
+  
+      <section class="product-category" id="otros">
+        <h2></h2>
+        <div class="product">
+          <img src="./imagenes/otros/otros 1-Photoroom.png" alt="Otro" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/otros/otros 2-Photoroom.png" alt="Otro 2" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="./imagenes/otros/otros 3-Photoroom.png" alt="Otro 3" />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+      </section>
+  
+      <section class="product-category" id="masProductos1">
+        <h2></h2>
+        <div class="product">
+          <img
+            src="./imagenes/mas productos 1/mas productos 1-Photoroom.png"
+            alt="Más Producto 1"
+          />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <!-- Repite esto para cada producto -->
+      </section>
+  
+      <section class="product-category" id="masProductos2">
+        <h2></h2>
+        <div class="product">
+          <img
+            src="./imagenes/mas productos2/mas productos2-Photoroom.png"
+            alt="Más Producto 2"
+          />
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <!-- Repite esto para cada producto -->
+      </section>
+    </main>
+  
+    <footer>
+      <video autoplay loop muted id="header-video2">
+        <source src="./imagenes/footer.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+      <p>&copy; 2024 Tu Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
